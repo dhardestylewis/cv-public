@@ -1,0 +1,471 @@
+\documentclass[letterpaper, 10pt]{moderncv}
+  \usepackage{lmodern}
+  \usepackage[english]{babel}
+  \usepackage{url}
+  \usepackage[
+    type={CC},
+    modifier={by-sa},
+    version={4.0},
+  ]{doclicense}
+  \hyphenpenalty=100000
+  \hbadness=99999
+%% Themes
+  \moderncvstyle{casual}
+  \moderncvcolor{red}
+  \nopagenumbers{}
+%% Encoding
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+%% Margins
+  \usepackage[scale=0.85]{geometry}
+  \setlength{\hintscolumnwidth}{2.81cm}
+%% Data
+  \firstname{\textsc{Daniel}}
+  \familyname{\textsc{Hardesty Lewis}}
+  \address{\textsc{1915~Santa~Clara~st}}{\textsc{Austin,~TX 78757}}{\textsc{United~States}}
+  \phone[mobile]{+1~(713)~371-7875}
+  \email{dhl@tacc.utexas.edu}
+  \homepage{tacc.utexas.edu/about/directory/daniel-lewis}
+  \social[linkedin]{dhardestylewis}
+  \social[github]{dhardestylewis}
+  \social[gitlab]{dhl}
+  %% TODO: consider replaceing url package with hyperref package, for example:
+  %%  https://tex.stackexchange.com/a/180574/249357
+  %%  https://tex.stackexchange.com/a/107835/249357
+  \extrainfo{\url{https://researchgate.net/profile/Daniel-Hardesty-Lewis}}
+%% Define \cvdoublecolumn
+  \newcommand{\cvdoublecolumn}[2]{
+    \cvitem[0.75em]{}{
+      \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}
+      \hfill
+      \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}
+    }
+  }
+%% Define \cvreference
+  \newcommand{\cvreference}[7]{
+    \textbf{#1}\newline
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}
+  }
+\begin{document}
+  \doclicenseThis
+  \makecvtitle
+  \section{\textsc{Education}}
+    \cventry{2017~Dec.}{B.S., Mathematics}{University of Texas}{Austin,~United~States}{}{}%Topology I
+    \cventry{2017~Dec.}{Certificate, Scientific~Computation}{University of Texas}{Austin,~United~States}{}{}%Topology I
+  \section{\textsc{Experience}}
+  \subsection{\textsc{Research~\&~teaching}}
+    \cventry{2018~Feb. -- Present}{Research engineering / scientist associate I}{Texas Advanced Computing Center}{Austin,~United~States}{}{%  \newline{}
+      Detailed accomplishments:
+      \begin{itemize}
+        \item Collaborating to develop a unified data representation of Texas's water resources for integrated hydrology modellers
+        \item Helped teach courses in data informatics and machine learning in the geosciences
+      \end{itemize}}
+%%%     The Texas Institute for Discovery Education in Science of my
+%%%     university's College of Natural Sciences funded, through a generous
+%%%     fellowship, my summer's work at the supercomputing centre, TACC. By
+%%%     updates rectifying long-standing limitations and bugs in the Fortran
+%%%     codebase of the flow model, MODFLOW-96, and by improvements to an
+%%%     ontology garnered through natural~language processing techniques, I
+%%%     have laid the foundations of a generic interoperator between
+%%%     groundwater simulators.
+%%%     40 hours per week for 10 weeks
+%%%     2017 May 31 -- Present
+%%%     Texas Advanced Computing Center
+%%%     Undergraduate Research Assistant
+%%%     Doctor Suzanne A. Pierce
+%%%     spierce@tacc.utexas.edu
+%%%     +1 (512) 475-9411
+%%%     TEXAS ADVANCED COMPUTING CENTER
+%%%     ADVANCED COMPUTING BUILDING (ACB)
+%%%     J.J. PICKLE RESEARCH CAMPUS, BUILDING 205
+%%%     2305 BURNET RD (R8700)
+%%%     AUSTIN, TX 78758-4497
+%%%     TRAVIS
+%%%     UNITED STATES
+    \cventry{2020~Aug. -- 2020~Dec.}{Co-instructor}{University of Texas}{Austin,~United~States}{}{\emph{Scientific computation} Available to the students for consultation on their homework and class projects}%}{  \newline{}
+%      Detailed accomplishments:
+%      \begin{itemize}
+%	 \item
+%        \item
+%        \item
+%      \end{itemize}}
+%%%     The Texas Institute for Discovery Education in Science of my
+%%%     university's College of Natural Sciences funded, through a generous
+%%%     fellowship, my summer's work at the supercomputing centre, TACC. By
+%%%     updates rectifying long-standing limitations and bugs in the Fortran
+%%%     codebase of the flow model, MODFLOW-96, and by improvements to an
+%%%     ontology garnered through natural~language processing techniques, I
+%%%     have laid the foundations of a generic interoperator between
+%%%     groundwater simulators.
+%%%     40 hours per week for 10 weeks
+%%%     2017 May 31 -- Present
+%%%     Texas Advanced Computing Center
+%%%     Undergraduate Research Assistant
+%%%     Doctor Suzanne A. Pierce
+%%%     spierce@tacc.utexas.edu
+%%%     +1 (512) 475-9411
+%%%     TEXAS ADVANCED COMPUTING CENTER
+%%%     ADVANCED COMPUTING BUILDING (ACB)
+%%%     J.J. PICKLE RESEARCH CAMPUS, BUILDING 205
+%%%     2305 BURNET RD (R8700)
+%%%     AUSTIN, TX 78758-4497
+%%%     TRAVIS
+%%%     UNITED STATES
+    \cventry{2018~June -- 2018~Aug.}{Teaching assistant}{Texas Advanced Computing Center}{Austin,~United~States}{}{\emph{Machine learning for the geosciences} Recommended most efficient uses of the high performance computing systems as well as performance optimisations for specific codes to students from Petrobras}%}{  \newline{}
+%      Detailed accomplishments:
+%      \begin{itemize}
+%	 \item
+%        \item
+%        \item
+%      \end{itemize}}
+%%%     The Texas Institute for Discovery Education in Science of my
+%%%     university's College of Natural Sciences funded, through a generous
+%%%     fellowship, my summer's work at the supercomputing centre, TACC. By
+%%%     updates rectifying long-standing limitations and bugs in the Fortran
+%%%     codebase of the flow model, MODFLOW-96, and by improvements to an
+%%%     ontology garnered through natural~language processing techniques, I
+%%%     have laid the foundations of a generic interoperator between
+%%%     groundwater simulators.
+%%%     40 hours per week for 10 weeks
+%%%     2017 May 31 -- Present
+%%%     Texas Advanced Computing Center
+%%%     Undergraduate Research Assistant
+%%%     Doctor Suzanne A. Pierce
+%%%     spierce@tacc.utexas.edu
+%%%     +1 (512) 475-9411
+%%%     TEXAS ADVANCED COMPUTING CENTER
+%%%     ADVANCED COMPUTING BUILDING (ACB)
+%%%     J.J. PICKLE RESEARCH CAMPUS, BUILDING 205
+%%%     2305 BURNET RD (R8700)
+%%%     AUSTIN, TX 78758-4497
+%%%     TRAVIS
+%%%     UNITED STATES
+    \cventry{2018~Feb. -- 2018~May}{Co-instructor}{University of Texas}{Austin,~United~States}{}{\emph{Data informatics and intelligent systems for the geosciences} Designed and instructed the technical half of this graduate course: intermediate programming, Linux, and high performance computing}%}{  \newline{}
+%      Detailed accomplishments:
+%      \begin{itemize}
+%	 \item
+%        \item
+%        \item
+%      \end{itemize}}
+%%%     The Texas Institute for Discovery Education in Science of my
+%%%     university's College of Natural Sciences funded, through a generous
+%%%     fellowship, my summer's work at the supercomputing centre, TACC. By
+%%%     updates rectifying long-standing limitations and bugs in the Fortran
+%%%     codebase of the flow model, MODFLOW-96, and by improvements to an
+%%%     ontology garnered through natural~language processing techniques, I
+%%%     have laid the foundations of a generic interoperator between
+%%%     groundwater simulators.
+%%%     40 hours per week for 10 weeks
+%%%     2017 May 31 -- Present
+%%%     Texas Advanced Computing Center
+%%%     Undergraduate Research Assistant
+%%%     Doctor Suzanne A. Pierce
+%%%     spierce@tacc.utexas.edu
+%%%     +1 (512) 475-9411
+%%%     TEXAS ADVANCED COMPUTING CENTER
+%%%     ADVANCED COMPUTING BUILDING (ACB)
+%%%     J.J. PICKLE RESEARCH CAMPUS, BUILDING 205
+%%%     2305 BURNET RD (R8700)
+%%%     AUSTIN, TX 78758-4497
+%%%     TRAVIS
+%%%     UNITED STATES
+    \cventry{2017~May -- 2017~Aug.}{Undergraduate research~assistant}{Texas Advanced Computing Center}{Austin,~United~States}{}{Equipped with a fellowship from the University of Texas's College of Natural Sciences, improved interoperability amongst groundwater flow models using high-performance computing methods  \newline{}
+      Detailed accomplishments:
+      \begin{itemize}
+        \item Updated decades-old groundwater modelling software's data conversion utilities in their original languages, Fortran 66 and 90
+        \item Retrieved matching variables between groundwater modelling softwares using term frequency - inverse document frequency (\textsc{tf-idf})
+        \item Led a workshop on modern programming technologies for grounwater modelling
+      \end{itemize}}
+%%%     The Texas Institute for Discovery Education in Science of my
+%%%     university's College of Natural Sciences funded, through a generous
+%%%     fellowship, my summer's work at the supercomputing centre, TACC. By
+%%%     updates rectifying long-standing limitations and bugs in the Fortran
+%%%     codebase of the flow model, MODFLOW-96, and by improvements to an
+%%%     ontology garnered through natural~language processing techniques, I
+%%%     have laid the foundations of a generic interoperator between
+%%%     groundwater simulators.
+%%%     40 hours per week for 10 weeks
+%%%     2017 May 31 -- Present
+%%%     Texas Advanced Computing Center
+%%%     Undergraduate Research Assistant
+%%%     Doctor Suzanne A. Pierce
+%%%     spierce@tacc.utexas.edu
+%%%     +1 (512) 475-9411
+%%%     TEXAS ADVANCED COMPUTING CENTER
+%%%     ADVANCED COMPUTING BUILDING (ACB)
+%%%     J.J. PICKLE RESEARCH CAMPUS, BUILDING 205
+%%%     2305 BURNET RD (R8700)
+%%%     AUSTIN, TX 78758-4497
+%%%     TRAVIS
+%%%     UNITED STATES
+    \cventry{2016~June -- 2016~July}{Foreign~exchange student}{Intelligent~Systems in Geosciences}{San~Miguel~de~Allende,~Mexico\emph{; }Mexico~City,~Mexico\emph{; then }Austin,~United~States}{}{Developed conversion utilities between groundwater flow models  \newline{}
+      Detailed accomplishments:
+      \begin{itemize}
+        \item Developed a data conversion API in Perl for the groundwater modelling software, MODFLOW-96
+        \item Used regular expressions to parse these variables
+        \item Independently developed similar functionality to the then-unreleased Python package for MODFLOW data conversion, FloPy
+      \end{itemize}}
+%%%     40 hours per week for 02 weeks
+%%%     2016 June 11 -- 2016 July 24
+%%%     Intelligent Systems for Geosciences RCN
+%%%     Foreign Exchange Student
+%%%     Doctor Suzanne A. Pierce
+%%%     spierce@tacc.utexas.edu
+%%%     +1 (512) 475-9411
+%%%     TEXAS ADVANCED COMPUTING CENTER
+%%%     ADVANCED COMPUTING BUILDING (ACB)
+%%%     J.J. PICKLE RESEARCH CAMPUS, BUILDING 205
+%%%     2305 BURNET RD (R8700)
+%%%     AUSTIN, TX 78758-4497
+%%%     TRAVIS
+%%%     UNITED STATES
+    \cventry{2013~May -- 2013~Dec.}{Undergraduate research~assistant}{Dept.~of~Astronomy, University~of~Texas}{Austin,~United~States}{}{Tested boundaries of the stellar~evolution code, \textsc{mesa}, by extensive simulation  \newline{}
+      Detailed accomplishments:
+        \begin{itemize}
+          \item Discovered that \textsc{mesa} successfully simulated O/Ne white dwarf stellar evolution
+          \item Found the model's bounds for such stellar evolution
+          \item Demonstrated the accuracy of these simulations against peer-reviewed observations of similar stars
+        \end{itemize}}
+%%%     Prof. Mike Montgomery tasked me with the “next-to-impossible” problem
+%%%     to determine whether the stellar evolution code, Modules for
+%%%     Experiments in Stellar Astrophysics, natively and normally simulates
+%%%     a particular class of stars. Upon a probing literature review and
+%%%     some familiarisation with the underlying Fortran code, that this is the
+%%%     case, I discovered.
+%%%		10 hours per week
+%%%     2013 May 31 -- 2013 Dec. 17
+%%%     UT Austin, Dept. of Astronomy
+%%%     Undergrad. Research Assistant
+%%%     Professor Michael H. Montgomery
+%%%     mikemon@astro.as.utexas.edu
+%%%     +1 (512) 471-3451
+%%%     THE UNIVERSITY OF TEXAS AT AUSTIN
+%%%     DEPARTMENT OF ASTRONOMY
+%%%     2515 SPEEDWAY, RLM 16.304
+%%%     AUSTIN, TX 78712-1205
+%%%     TRAVIS
+%%%     UNITED STATES
+  \subsection{\textsc{Professional}}
+    \cventry{2018~July -- 2020~Aug.}{Systems designer}{Inter-Cooperative Council}{Austin,~United~States}{}{Designed the internet infrastructures for 20+-member cooperative houses, New Guild and Ruth Schultz  \newline{}
+      Detailed accomplishments:
+      \begin{itemize}
+        \item Selected equipment to completely replace their existing internet infrastructures
+        \item Enabled staff to continue to self-maintain their infrastructure for years to come
+      \end{itemize}}
+%%%     Careful review of the current habits of usage and limitations of the
+%%%     proprietary database employed by this organisation provoked the
+%%%     conclusion that a switch was both timely and necessary. I developed a
+%%%     workflow in Bash which interweaves existing conversion technologies in
+%%%     such a manner as to produce an up-to-date SQL database with a single
+%%%     click.
+%%%     07 hours per week
+%%%     2016 Oct. 05 -- 2017 Jan. 11
+%%%     Mission~Interuniversitaire de Coordination~Échanges Franco-Américains (MICEFA)
+%%%     Information Technology Intern
+%%%     Professor Jean-Marc Chamot
+%%%     academicdirector@micefa.org
+%%%     +33 (0)1 40 51 76 96
+%%%     MICEFA
+%%%     26 RUE DU FAUBOURG SAINT JACQUES
+%%%     75014 PARIS, ÎLE-DE-FRANCE
+%%%     FRANCE
+    \cventry{2016~Oct. -- 2017~Jan.}{Information~technology intern}{Mission~Interuniversitaire de Coordination~Échanges \mbox{Franco-Américains}}{Paris,~France}{}{Developed Bash workflow that transforms antiquated, proprietary database into contemporary, SQL one}%  \newline{}
+%      Detailed accomplishments:
+%      \begin{itemize}
+%        \item
+%        \item
+%        \item
+%      \end{itemize}}
+%%%     Careful review of the current habits of usage and limitations of the
+%%%     proprietary database employed by this organisation provoked the
+%%%     conclusion that a switch was both timely and necessary. I developed a
+%%%     workflow in Bash which interweaves existing conversion technologies in
+%%%     such a manner as to produce an up-to-date SQL database with a single
+%%%     click.
+%%%     07 hours per week
+%%%     2016 Oct. 05 -- 2017 Jan. 11
+%%%     Mission~Interuniversitaire de Coordination~Échanges Franco-Américains (MICEFA)
+%%%     Information Technology Intern
+%%%     Professor Jean-Marc Chamot
+%%%     academicdirector@micefa.org
+%%%     +33 (0)1 40 51 76 96
+%%%     MICEFA
+%%%     26 RUE DU FAUBOURG SAINT JACQUES
+%%%     75014 PARIS, ÎLE-DE-FRANCE
+%%%     FRANCE
+    \cventry{2015~June -- 2018 Aug.}{Conflict mediator}{Inter-Cooperative Council}{Austin,~United~States}{}{Fairly enforced contracts as neutral arbiter between members and their respective cooperative houses  \newline{}
+      Detailed accomplishments:
+      \begin{itemize}
+        \item Familiar with all of the relevant house policies and the housing cooperative's by-laws
+        \item On-call to mediate when conflicts between members arose
+        \item Brought parties to mutually agreed-upon solutions
+      \end{itemize}}
+%%%     To provide for a space in which members of this cooperative housing
+%%%     system may air grievances against others or his or her particular house
+%%%     stands as my duty. I must embody this system's rigorous process of
+%%%     conflict mediation, all while minding the unique policies of the house
+%%%     in question. It is my hope - and my aim - to uphold fairness and
+%%%     neutrality in so doing.
+%%%		06 hours as needed
+%%%     2015 June 17 -- Present
+%%%     Inter-Cooperative Council
+%%%     Conflict Mediator
+%%%     Ashleigh Lassiter
+%%%     ashleigh@iccaustin.coop
+%%%     +1 (512) 476-1957
+%%%     INTER-COOPERATIVE COUNCIL
+%%%     2305 NUECES ST
+%%%     AUSTIN, TX 78705-5207
+%%%     TRAVIS
+%%%     UNITED STATES
+    \cventry{2014~Sep. -- 2018 Aug.}{Maintenance \& technology officers}{Avalon\emph{, }Helios\emph{, then} Royal Co-operatives\emph{, }\textsc{icc}}{Austin,~United~States}{}{Redeveloped the internet infrastructures for these co-operative houses  \newline{}
+      Detailed accomplishments:
+      \begin{itemize}
+        \item Implemented SFTP server accessible remotely by the house's membership
+        \item Made multiple GNU/Linux desktop computers available for the membership's use
+        \item Laid ethernet wire and installed routers and access points tailored with OpenWRT
+      \end{itemize}}
+%%%     No aspect of the pre-existing information technology infrastructure was
+%%%     left unexamined. In the several years spent at the Avalon Co-operative,
+%%%     I rewired the Ethernet connection to most of the more than two dozen
+%%%     quarters of the house. Along with replacements of nearly every router,
+%%%     switch, and access point, available bandwidth, by wire and by wireless,
+%%%     increased by an order of magnitude.
+%%%		02 hours per week
+%%%     2014 Sep. 1 -- Present
+%%%     Inter-Cooperative Council
+%%%     Maintenance Officer
+%%%     Billy Thogersen
+%%%     billy@iccaustin.coop
+%%%     +1 (512) 476-1957
+%%%     INTER-COOPERATIVE COUNCIL
+%%%     2305 NUECES ST
+%%%     AUSTIN, TX 78705-5207
+%%%     TRAVIS
+%%%     UNITED STATES
+  \section{\textsc{Peer-reviewed~articles}}
+    \cvitem{2021~July}{Gil,~Y., D.~Garijo, D.~Khider, C.~A.~Knoblock, M.~Osorio, H.~Vargas, M.~Pham, J.~Pujara, B.~Shbita, B.~Vu, Y.~Chiang, D.~Feldman, Y.~Lin, H.~Song, V.~Kumar, A.~Khandelwal, M.~Steinbach, K.~Tayal, S.~Xu, S.~A.~Pierce, L.~Pearson, \emph{D.~Hardesty~Lewis}, E.~Deelman, R.~F.~da~Silva, R.~Mayani, A.~R.~Kemanian, Y.~Shi, L.~Leonard, S.~.D.~Peckham, M.~Stoica, K.~M.~Cobourn, Z.~Zhang, C.~Duffy, L.~Shu. "Artificial Intelligence for Modeling Complex Systems: Taming the Complexity of Expert Models to Improve Decision Making". {\small The ACM Transactions on Interactive Intelligent Systems 11(2):11.}}
+  \section{\textsc{Conference~papers}}
+    \cvitem{2019~Mar.}{Garijo,~D., J.~Pujara, B.~Vu, D.~Feldman, R.~Mayani, K.~Cobourn, C.~Duffy, A.~R.~Kemanian, L.~Shu, V.~Kumar, A.~Khandelwal, D.~Khider, K.~Tayal, S.~D.~Peckham, M.~Stoica, A.~Dabrowski, \emph{D.~Hardesty~Lewis}, S.~A.~Pierce, V.~Ratnakar, Y.~Gil, E.~Deelman, R.~F.~da~Silva, C.~Knoblock, Y.~Chiang, M.~Pham. "An intelligent interface for integrating climate, hydrology, agriculture, and socioeconomic models". {\small ACM 24th International Conference on Intelligent User Interfaces (IUI'19).}}
+    \cvitem{2018~June}{Garijo,~D., D.~Khider, Y.~Gil, L.~A.~M.~C.~Carvalho, B.~T.~Essawy, S.~A.~Pierce, \emph{D.~Hardesty~Lewis}, V.~Ratnakar, S.~D.~Peckham, C.~Duffy, J.~L.~Goodall. "A Semantic Model Catalog to Support Comparison and Reuse". {\small 9th International Congress on Environmental Modelling and Software.}}
+  \section{\textsc{Technical~reports}}
+    \cvitem{2021~Mar.}{Sun,~A., M.~H.~Young, S.~A.~Pierce, J.~Thompson, \emph{D.~Hardesty~Lewis}, B.~R.~Scanlon. "Development of a Framework of Data Interpolation, Scaling, and Homogenization (DISH) for Mapping Natural Resources and Socioeconomic Data in Texas".}
+    \cvitem{2019~Oct.}{Khider,~D., Y.~Gil, D.~Garijo, K.~M.~Cobourn, C.~Duffy, A.~R.~Kemanian, S.~D.~Peckham, B.~Watkins, A.~Campion, C.~Preager, S.~A.~Pierce, \emph{D.~Hardesty~Lewis}, A.~Dabrowski, C.~H.~Porter, M.~Landsfeld, M.~Puma, B.~Schauberger, A.~Sliva, C.~T.~Morrison. "Towards a Shared Modeling Terminology and Problem Specification Framework".}
+  \section{\textsc{Presentations}}
+    \cvitem{2021~May}{Passalacqua,~P., F.~R.~Salas, R.~Schomp, A.~Carruthers, \emph{D.~Hardesty~Lewis}. "Estimating Inundation Extent and Depth from National Water Model Outputs and High Resolution Topographic Data". {\small Presented to the National Oceanographic and Atmospheric Administration.}}
+    \cvitem{2020~Dec.}{Sun,~A., J.~Thompson, \emph{D.~Hardesty~Lewis}, J.~Powell, M.~H.~Young, B.~R.~Scanlon, S.~A.~Pierce. "Development of a Framework of Data Interpolation, Scaling, and Homogenization (DISH) for Mapping Natural Resources in Texas". {\small Presented at the 2020 annual Fall Research Showcase of Planet Texas 2050.}}
+    \cvitem{2020~Sep.}{Passalacqua,~P., D.~R.~Maidment, D.~Arctur, H.~Evans, C.~Thies, A.~Carruthers, R.~Schomp, \emph{D.~Hardesty~Lewis}, S.~A.~Pierce. "From Rain Forecasts to Stream Flow to Flood Modelling". {\small Presented at the 2020 annual Fall Research Showcase of Planet Texas 2050.}}
+    \cvitem{2020~Aug.}{\emph{Hardesty~Lewis,~D.}. "Vector and Raster GIS Processing with Python in Jupyter Notebooks". {\small Presented at the 2020 annual TACC Institute of Planet Texas 2050.}}
+    \cvitem{2019~Sep.}{\emph{Hardesty~Lewis,~D.}, A.~Dabrowski, J.~Powell, S.~A.~Pierce. "DataX and MINT Overview". {\small Presented at the 2019 annual Fall Research Showcase of Planet Texas 2050.}}
+  \section{\textsc{Posters}}
+    \cvitem{2019~Dec.}{Khider,~D., Y.~Gil, K.~M.~Cobourn, E.~Deelman, C.~Duffy, R.~F.~da~Silva, A.~R.~Kemanian, C.~A.~Knoblock, V.~Kumar, S.~D.~Peckham, Y.~Chiang, D.~Feldman, D.~Garijo, \emph{D.~Hardesty~Lewis}, A.~Khandelwal, R.~Mayani, M.~Osorio, M.~Pham, S.~A.~Pierce, J.~Pujara, V.~Ratnakar, L.~Shu, H.~J.~Song, B.~Shbita, M.~Stoica, B.~Vu, L.~Pearson. "MINT: An intelligent interface for understanding the impacts of climate change on hydrological, agricultural and economic systems". {\small Poster presented at the 2019 annual fall meeting of the American Geophysical Union.}}
+    \cvitem{2019~June}{\emph{Hardesty~Lewis,~D.}, J.~C.Thompson, E.~Pease, Q.~Yang, M.~H.~Young, S.~A.~Pierce. "A unified data representation of Texas water resources". {\small Poster presented at the 2019 annual meeting of the Earthcube community.}}
+    \cvitem{2019~June}{Pierce,~S.~A., J.~Powell, A.~Karpatne, D.~Garijo, J.~Martin, \emph{D.~Hardesty~Lewis}, P.~Marchetto, S.~Cleveland, M.~Daniels, I.~Athanasiadis, P.~Keys, I.~Demir, D.~Fuka, S.~Peckham, M.~Hill, I.~Ebert-Uphoff, D.~Pennington, G.~Jacobs, Y.~Gil. "Intelligent Systems and Geosciences". {\small Poster presented at the 2019 annual meeting of the Earthcube community.}}
+    \cvitem{2019~June}{Powell~J., A.~Karpatne, D.~Garijo, J.~Martin, \emph{D.~Hardesty~Lewis}, P.~Marchetto, S.~Cleveland, M.~Daniels, I.~N.~Athanasiadis, P.~W.~Keys, I.~Demir, S.~D.~Peckham, M.~Hill, I.~Ebert-Uphoff, D.~Pennington, G.~Jacobs, Y.~Gil, S.~A.~Pierce. "Creating Sustainable Knowledge Centric Communities with Artificial Intelligence Applications to Earth Science Problems". {\small Poster presented at the 2019 annual meeting of the Earthcube community.}}
+    \cvitem{2019~June}{Pease,~E., J.~C.~Thompson, \emph{D.~Hardesty~Lewis}, Q.~Yang, S.~A.~Pierce, M.~H.~Young. "Integrated Modeling of Texas Water Resources". {\small Poster presented at the 2019 annual meeting of the \textsc{modflow} and More conference series.}}
+    \cvitem{2018~Dec.}{Pease,~E., A.~Pfeil, V.~Ibarra, S.~Siddique, F.~Apango, O.~Ramirez, E.~Collado, \emph{D.~Hardesty~Lewis}, N.~Freed, S.~A.~Pierce. "Groundwater Modeling with Informatics and Automated Workflows for Water Resource Management: A Case Study from the Northern Trinity Aquifer". {\small Poster presented at the 2018 annual fall meeting of the American Geophysicial Union.}}
+    \cvitem{2018~Sep.}{Martin,~J., \emph{D.~Hardesty~Lewis}, N.~Freed, S.~A.~Pierce. "The IS-GEO Gateway: A community portal to facilitate AI and knowledge centered earth discoveries". {\small Poster presented at the 13\textsuperscript{th} annual conference of Gateway Computing Environments.}}
+    \cvitem{2018~June}{Martin,~J., D.~Garijo, N.~Freed, S.~A.~Pierce, Y.~Gil, D.~R.~Thompson, I.~Demir, I.~Ebert-Uphoff, D.~Pennington, \emph{D.~Hardesty~Lewis}, M.~Hill, D.~Fuka. "IS-GEO: A Research Coordination Network on Intelligent Systems Research to Support he Geosciences". {\small Poster presented at the 2018 annual meeting of the EarthCube community.}}
+    \cvitem{2017~Dec.}{\emph{D.~Hardesty~Lewis}, S.~A.~Pierce. "From \textsc{modflow}-96 to \textsc{modflow}-2005, \textsc{ParFlow}, and Others". {\small Poster presented at the 2017 annual fall meeting of the American Geophysical Union.}}
+    \cvitem{2017~Dec.}{Kejriwal,~M., S.~A.~Pierce, P.~I.~Q.~Houser, S.~D.~Peckham, Z.~Stanko, \emph{D.~Hardesty~Lewis}. "Semi-automatic Data Integration using Karma". {\small Poster presented at the 2017 annual fall meeting of the American Geophysical Union.}}
+    \cvitem{2016~July}{Cantu,~A., S.~A.~Pierce, O.~Rivera, A.~Ramirez, \emph{D.~Hardesty~Lewis}, J.~Gentle, G.~Fuentes-Pineda. "Big Data Analysis for Determining Sustainable Yield and Negotiation Space for an Aquifer System". {\small Poster presented at the 51\textsuperscript{st} annual meeting of the South-Central Section of the Geological Society of America.}}
+  \section{\textsc{Projects}}
+    \cvitem{2020~Dec. -- Present}{Museum of South Texas History Sunday Speaker Series  \newline{}
+      {\small Provide Dash-enabled website to facilitate geolocation of archival imagery by museum visitors}}
+    \cvitem{2020~Sep. -- Present}{Real-time flood inundation mapping to improve community resilience  \newline{}
+      {\small Provide simple, computationally efficient, high-resolution flood inundation maps to emergency response personnel}}
+    \cvitem{2020~Jan. -- Present}{Estimating Inundation Extent and Depth from National Water Model Outputs and High Resolution Topographic Data  \newline{}
+      {\small Improving the accuracy of flood inundation estimation products from 10m to 1m resolution}}
+    \cvitem{2017~Dec. -- Present}{MINT: Model INTegration Through Knowledge-Rich Data and Process Composition  \newline{}
+      {\small Integrate geoscience models \textsc{modflow}, \textsc{hand}, \& \textsc{swat} with models from widely separate disciplines including agriculture, economics, and social sciences}}
+    \cvitem{2016~Aug. -- Present}{Intelligent Systems for Geosciences  \newline{}
+      {\small Used natural language processing and ETL pipelines to capture geoscientific variables' metadata to integrate with intelligent systems}}
+    \cvitem{2019~Sep. -- 2020~Aug.}{Improving the Estimation of Inundation Extent and Depth with High Resolution Terrain Data Over the State of Texas  \newline{}
+      {\small Provided utilities to scale up the flood modelling toolset, GeoFlood, to statewide applicability across Texas}}
+    \cvitem{2018~July -- 2019~Dec.}{Optimal Averaging of Water Resources in Texas  \newline{}
+      {\small Indentified Texas water data sources, described their spatio-temporal scales and locations, estimated volume of all water in Texas its uncertainty, determined best methods to up-/down-scale all date to a common resolution and grid and minimise error}}
+    \cvitem{2017~May -- 2017~Aug.}{From \textsc{modflow}-96 to \textsc{modflow}-2005, \textsc{ParFlow}, and Others  \newline{}
+      {\small Progressed towards flow model interoperator upon a supercomputer by updates to a Fortran codebase, implementation of natural~language processing techniques in Perl, and improvement of an ontology}}
+    \cvitem{2016~July}{Big~Data Analysis for Determining Sustainable~Yield and Negotiation~Space for an Aquifer~System  \newline{}
+      {\small Developed in Perl a converter between input file~formats of groundwater models, \textsc{modflow}-96 and \textsc{ParFlow}}}
+    \cvitem{2014~Oct. -- 2014~Dec.}{Stochastic Differential~Equations and Monte~Carlo Simulation  \newline{}
+      {\small Wrote the code necessary, using Fortran, to model any given such an equation with arbitrary parameters}}
+    \cvitem{2013~May -- 2013~Dec.}{Region of Calculated Existence for O/Ne-Core~Stars with H/He~Envelopes  \newline{}
+	{\small Inspired by known observations, discovered that \textsc{mesa} indeed models accurately and natively such stars}}%implemented particular parameters in \textsc{mesa} that confirmed that it simulates accurately these types of stars
+  \section{\textsc{Technology~skills}}
+    \cvdoubleitem{Programming Languages}{\raggedright Fortran, Perl, R, Python, Bash, Octave~(\emph{i.e.}~\textsc{matlab})}{Operating Systems}{\raggedright \textsc{gnu}/Linux (Arch, Debian, Fedora), OpenWrt, mac\textsc{os}, Windows}
+    \cvdoubleitem{Virtualization}{\raggedright Docker, Singularity, chroot}{Word Processors}{\raggedright \LaTeX, LibreOffice}
+%    \cvdoubleitem{Computer Algebra Systems}{\raggedright Maxima, Mathematica}{Word Processors}{\raggedright \LaTeX, LibreOffice}
+  \section{\textsc{Pertinent coursework}}
+    \cvlistitem{\emph{Mathematics} {\small Advanced~Calculus~for~Applications, Linear~Algebra~and~Matrix~Theory, Differential~Equations, Real~Analysis~I, Probability~I, Partial~Differential~Equations~and~Applications, Topology~I, Algebraic~Structures~I, Complex~Analysis, Vector~Calculus}}
+    \cvlistitem{\emph{Scientific computing} {\small Introduction~to~Scientific~\&~Technical~Computing, Artificial~Intelligence~\emph{(audited)}, Mathematical~Modelling~in~Science~and~Engineering, Introduction~to~Stochastic~Processes, Applied~Statistics}}
+    \cvlistitem{\emph{Political and social sciences} {\small Intro~to~Network~Analysis, Machine~Learning, Math~for~Social~Sciences~III}}
+  \section{\textsc{Professional~affiliations}}
+    \cvlistitem{\emph{Mathematical Association of America} {\small Member}}
+    \cvlistitem{\emph{North American Students of Cooperation} {\small Member}}
+    \cvlistitem{\emph{American Geophysical Union} {\small Member}}
+  \section{\textsc{Extracurricular~activities}}
+    \cvlistitem{\emph{Mission~Interuniversitaire de Coordination~Échanges Franco-Américains} {\small Foreign~exchange}}
+%%%		Member during 2016/08-2017/01
+    \cvlistitem{\emph{Directed~Reading Program} {\small Graduate mathematical readings under individual guidance of doctoral~students}}
+%%%     Mentee during XXXXXXXXXXXXXXX [Fill in.]
+%%%		Mentee during 2016/01-2016/05
+    \cvlistitem{\emph{Mathematics Club} {\small Attended student- and professor-led talks}}
+%%%		Member during 2014/08-2016/05
+    \cvlistitem{\emph{Emerging~Scholars Program, Calculus} {\small Explored calculus outside of course~material}}
+%%%		Member during 2012/08-2013/05
+  \section{\textsc{Languages}}
+    \cvdoubleitem{French}{Professional working}{Spanish}{Native}
+%  \section{\textsc{References}}
+%    \cvdoublecolumn{
+%      \cvreference{}
+%        {}
+%	{}
+%	{}
+%	{}
+%	{}
+%	{}
+%      }
+%      {
+%      \cvreference{}
+%        {}
+%	{}
+%	{}
+%	{}
+%	{}
+%	{}
+%      }
+%    \cvdoublecolumn{
+%      \cvreference{}
+%        {}
+%	{}
+%	{}
+%	{}
+%	{}
+%	{}
+%      }
+%      {
+%      \cvreference{}
+%        {}
+%	{}
+%	{}
+%	{}
+%	{}
+%	{}
+%      }
+%  \clearpage
+%%%%-----     letter     -----
+%%%% recipient data
+%  \recipient{}{}
+%  \date{}
+%  \opening{}
+%  \closing{}
+%  \enclosure[Attached]{curriculum vit\ae{}}
+%  \makelettertitle
+%  \makeletterclosing
+\end{document}
