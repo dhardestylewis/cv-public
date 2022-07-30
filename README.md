@@ -23,6 +23,8 @@ I design and implement intelligent decision support systems to support computati
 - 💬 Ask me about ... [GDAL](https://github.com/OSGeo/gdal), [PostgreSQL](https://github.com/postgres/postgres), [Geopandas](https://github.com/geopandas/geopandas) & [RasterIO](https://github.com/mapbox/rasterio)
 - 📫 How to reach me: ... send me an email! See [https://github.com/dhardestylewis] for ways to contact me!
 
+<iframe src="http://docs.google.com/gview?url=https://github.com/dhardestylewis/cv-public/blob/main/cv-dhl-20220728.pdf&embedded=true" style="width:718px; height:700px;" frameborder="0"></iframe>
+
 <embed src="https://github.com/dhardestylewis/cv-public/blob/main/cv-dhl-20220728.pdf" width="500" height="375" 
  type="application/pdf">
 
