@@ -22,3 +22,6 @@ I design and implement intelligent decision support systems to support computati
 - 👯 I’m looking to collaborate on ...  global scaling of elevation & flood data workflows, scalable equitable land-use models
 - 💬 Ask me about ... [GDAL](https://github.com/OSGeo/gdal), [PostgreSQL](https://github.com/postgres/postgres), [Geopandas](https://github.com/geopandas/geopandas) & [RasterIO](https://github.com/mapbox/rasterio)
 - 📫 How to reach me: ... send me an email! See [https://github.com/dhardestylewis] for ways to contact me!
+
+![curriculum vitae](https://github.com/dhardestylewis/cv-public/blob/main/cv-dhl-20220728.png)
+
